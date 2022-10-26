@@ -1,5 +1,9 @@
 # probcalc
 
+### Live at [https://probcalc.mikeylab.com](https://probcalc.mikeylab.com)
+
+## The problem
+
 Yep, sometimes professors/teachers can give you homework problems from a textbook which require you to do math before the actual homework. This attempts to alleviate that problem.
 
 ## Supported Types
