@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html style="width: 100%; height: 100%;" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProbCalc</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    </script>
+
+    <style>
+        /* reused from other projects */
+
+        * {
+            text-align: center;
+        }
+
+        .center {
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #main {
+            height: min-content;
+            z-index: 3;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+
+        input {
+            text-align: left !important;
+        }
+    </style>
+</head>
+
+<body style="width: 100%; height: 100%; background-color: #5f9ea0;">
+    <div class="center card w-50" id="main" style="max-height: 80%;">
+        <div id="card-header" class="card-header">
+            <b>ProbCalc</b>
+        </div>
+        <div id="card-body" class="card-body" style="height: min-content;">
+            <a href="javascript: void(0);" id="showinst">Show Instructions</a>
+            <br />
+            <div id="instructions" style="display: none;">
+                <br />
+                <div>Problems to calculate must be in this format:</div>
+                <div>"<b>Start Problem</b>-<b>End Problem</b> <b>Operator</b>, "</div>
+                <div>where operator is one of the following: eoo, odds, evens, all, (pick ?) [will automatically pick odds] (OR leave out End Problem and Operator for single problem)</div>
+            </div>
+            <br />
+            <div class="form-floating">
+                <input type="text" class="form-control" id="problems" placeholder="Problems">
+                <label for="problems">Problems</label>
+            </div>
+            <br />
+            <button id="calc" class="btn btn-primary" disabled>Calculate!</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
