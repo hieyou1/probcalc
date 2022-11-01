@@ -50,6 +50,7 @@ DOM.submit.onclick = () => {
                     for (let i = start; i <= end; ++i) {
                         if (i % 2 != 0) addProblem(i);
                     }
+                    break;
                 }
                 case "evens": {
                     for (let i = start; i <= end; ++i) {
